@@ -1,6 +1,14 @@
+tarefas = ["Estudar Git", "Praticar Gitflow"]
+
+
 def listar_tarefas():
-    print("1. Estudar Git")
-    print("2. Praticar Gitflow")
+    for tarefa in tarefas:
+        print(tarefa)
 
 
+def adicionar_tarefa(titulo):
+    tarefas.append(titulo)
+
+
+adicionar_tarefa("Abrir Pull Request")
 listar_tarefas()
